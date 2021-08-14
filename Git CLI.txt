@@ -1,0 +1,87 @@
+Cheat Sheat ---------------->    	https://training.github.com/downloads/github-git-cheat-sheet/
+
+Git hub command line interface commonly used commands - 
+
+-->  makdir gitrepo
+-->  cd gitrepo
+-->  git init                   Initailize empty git repo in gitrepo directory
+
+
+-->  touch file1.text
+-->  ls -lrt          or   -->  ll
+-->  git status
+
+
+Staging(Indexing) and Commit(To save on local box) 
+
+-->  git add . 			Staging(Indexing) all files in current directory or folder
+-->  git status
+
+If not login on bash
+
+-->  git config --global user email "atulgautamofficial@gmail.com"
+Give access to this mail id as admin and to push on this server ID
+
+Commit
+
+-->  git commit -m "First Commit (any name can be given)"	Commited on local box1 (Disk)
+-->  git status
+
+Push on remote box (server of Git-hub)
+
+-->  git remote add origin LINK		LINK-	Copy from website repository link
+-->  git push -u origin master		Pushed on remote server in master node (Trunk-main line)
+
+
+Now our file1.txt has been uploaded. 
+Now lets make another file2.txt and upload on same repository of remote server.
+
+-->  touch file2.txt
+-->  git add .
+-->  git commit -m "Second Commit"
+-->  git remote add origin
+-->  git push -u origin master			or 	git push URL master			URL can be copied from website
+-->  git remote -v			Will give full path for Pull(fetch)/Push
+
+
+Here file2.text also has been uploaded to remote server.
+Now lets make some modification on file2.txt and upload on branch node instead of master node.
+
+Branching
+
+-->  git fetch
+-->  git checkout -b mybranch (any name of branch)
+-->  git branch			output - master and mybranch (Only on local box2) - need to update server also
+-->  git  push origin mybranch			Will update the server as mybranch branch node
+
+Modifications on file (Do some modifications on file2.txt)
+
+-->  cat file2.txt			Print cat file2.txt
+-->  vim file2.txt			Use to modify or write file2.txt (Do not use and do it manually)
+-->  git status
+-->  git add .
+-->  git commit -m "file2.txt modified"
+-->  git push origin mybranch		Pushed on branch node (mybranch) on server ID
+
+Pulling on master node (Merge master & mybranch) after apporval (Will do admin only)
+
+Go website & click on pull request and follow simple steps
+
+
+
+Other Ineresting Commands
+
+-->  git log 			All activity information will be printed
+-->  git clone LINK		LINK - 	Link of web address to be cloned
+
+
+
+Make you readme file (Necessary)
+Use Git-hub Pages ---------- For blogging or publishing the code or papers or methods
+Book Link ------------------ https://git-scm.com/book/en/v2
+Stackover flow for more information through google
+Documentation/Reference ---- https://git-scm.com/docs
+
+
+
+Thanks
